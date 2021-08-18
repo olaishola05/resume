@@ -3,7 +3,8 @@ import { makeStyles } from '@material-ui/core'
 const useStyles = makeStyles((theme) => ({
     container: {
         backgroundColor: theme.palette.background.paper,
-        padding: theme.spacing(8, 0, 6)
+        padding: theme.spacing(8, 0, 6),
+        border: '1px solid green'
     },
 
     icon:{
@@ -14,35 +15,36 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: '#183041'
     },
 
-    bio:{
-        border: '1px solid red',
+    gridbio:{
+        // border: '1px solid grey',
+        padding: theme.spacing(2),
+        justifyContent: 'center'
+    },
+
+    social:{
+        display: 'flex',
+        padding: '5px'
+    },
+
+    info2:{
+        width: "60vw",
+        border: '1px solid blue',
         display: 'flex',
         flexDirection: 'row',
-        padding: theme.spacing(2)
+        alignItems: 'center',
+        justifyContent: 'center'
     },
 
     summary: {
-        border: '1px solid red',
+        // border: '1px solid red',
         padding: theme.spacing(1),
         width: '89vw',
         marginTop: '1rem'
     },
 
-    info:{
-        width: "43vw",
-        border: '1px solid blue',
-        padding: theme.spacing(1)
-    },
-
-    info2:{
-        width: "30vw",
-        border: '1px solid blue',
-        padding: theme.spacing(1)
-    },
-
     image:{
         display: 'flex',
-        padding: '5px'
+        // padding: '5px'
     },
 
     large: {
@@ -58,6 +60,18 @@ const useStyles = makeStyles((theme) => ({
 
       para:{
           color: '#183041'
+      },
+
+      tech:{
+            padding: '20px 0',
+            height: '100%',
+            boxShadow: '0 3px 5px 2px rgba(255, 100, 135, .3)',    
+      },
+
+      skills:{
+        display: 'flex',
+        flexDirection: 'row',
+        border: '1px solid blue'
       }
 
 
