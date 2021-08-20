@@ -1,5 +1,4 @@
 import React from 'react'
-// import data from '../utils/data'
 import { Container , Grid, Typography, Avatar} from '@material-ui/core'
 import EmailIcon from '@material-ui/icons/Email'
 import LocationOnIcon from '@material-ui/icons/LocationOn';
@@ -34,7 +33,7 @@ const Bio = () => {
                       <div className={classes.social}>
                       <EmailIcon/>
                       <Typography align='right'>
-                        emailaxocncnnxcn@mail.com 
+                        olaishola@hotmail.co.uk 
                       </Typography>
                       </div>
 
@@ -47,7 +46,7 @@ const Bio = () => {
                       <div className={classes.social}>
                       <PhoneIphoneIcon/> 
                       <Typography align='right'>
-                          0585855758555 
+                          +234-8110837448
                       </Typography>
                       </div>
                   </Container>
@@ -56,8 +55,12 @@ const Bio = () => {
 
             <Container align='center' maxWidth='md' className={classes.summary}>
                   <Typography align='justify'>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio mollitia perferendis suscipit alias, ratione est repellendus corrupti id aliquam neque error sint exercitationem recusandae ullam laborum modi laboriosam repellat beatae!
-                      </Typography>
+                    I am a JavaScript developer with experience in ReactJS and hands-on experience collaborating on
+                    projects with a team spread around the globe. I am considered a people builder with an attention to
+                    detail and a relationship builder. I’m looking for new challenges and opportunities to grow in a com-
+                    pany environment. I possess good teamwork skills, problem-solving abilities, and excellent com-
+                    munication skills, which qualify me as a good fit for the software development sector.
+                    </Typography>
                   </Container>
         </div>
     )

@@ -10,35 +10,31 @@ const Skills = () => {
         <div>
              <Container maxWidth='md' className={classes.tech}>
                 <Typography variant='h4' align='center'>Tech Skills</Typography>
+                <div className={classes.skills}>
                 {skills.map((skill, idx) => {
                     return(
-                        // <Grid container spacing={4} key={idx}>
-                        //     <Grid
-                        //     className={classes.skills}
-                        //     item
-                        //     xs={12}
-                        //     sm={6}
-                        //     md={4}
-                        //     >
+                        <React.Fragment key={idx}>
+                            <Grid
+                            // item
+                            // xs={12}
+                            // sm={6}
+                            // md={4}
+                            >
 
-                        //     <div>
-                        //     <Button color='primary' variant='outlined'>
-                        //         {skill}
-                        //     </Button>
-                        //     </div>
+                            <div>
+                            <Button color='primary' variant='outlined'>
+                                {skill}
+                            </Button>
+                            </div>
                             
-                        //     </Grid>
+                            </Grid>
                             
-                        // </Grid>
+                        </React.Fragment>
 
-                        <div  key={idx}>
-                            {/* <ul className={classes.lists}>
-                                
-                            </ul> */}
-                            <span className={classes.skills} >{skill}</span>
-                        </div>
+                
                     )
                 })}
+                </div>
             </Container>
 
         </div>

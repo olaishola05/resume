@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     },
 
     bar:{
-        backgroundColor: '#183041'
+        backgroundColor: 'white'
     },
 
     bio:{
@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     
     info:{
         width: "40vw",
-        border: '1px solid blue',
+        // border: '1px solid blue',
         marginRight: '20px',
         [theme.breakpoints.down('xs')]: {
             width: '100%',
@@ -56,13 +56,11 @@ const useStyles = makeStyles((theme) => ({
 
     info2:{
         width: "60vw",
-        border: '1px solid blue',
+        // border: '1px solid blue',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'flex-end',
         [theme.breakpoints.down('xs')]: {
-            // flexDirection: 'row',
-            // width: '70.1vw'
             display: 'none'
           },
     },
@@ -70,7 +68,7 @@ const useStyles = makeStyles((theme) => ({
     summary: {
         // padding: theme.spacing(2),
         width: '100vw',
-        marginTop: '.5rem'
+        marginTop: '1rem'
     },
 
     image:{
@@ -93,7 +91,6 @@ const useStyles = makeStyles((theme) => ({
       },
 
       text:{
-        //   border: '1px solid green',
           marginLeft: '20px',
           padding: '10px'
       },
@@ -109,10 +106,9 @@ const useStyles = makeStyles((theme) => ({
       },
 
       skills:{
-        width: '80%',
-        display: 'flex',
-        // flexDirection: 'row',
-        // border: '1px solid blue'
+        // width: '80%',
+        display: 'grid',
+        gridTemplateColumns: 'repeat(10, 1fr)'
       },
 
       lists:{
@@ -121,25 +117,44 @@ const useStyles = makeStyles((theme) => ({
 
       projects:{
           marginTop: '1rem',
-          padding: '20px 0'
+          padding: '20px 0',
+          border: '1px solid green'
+      },
+
+      projectTitle: {
+        marginBottom: '2rem',
+      },
+
+      projectCard:{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(3, 1fr)',
+        border: '1px solid red',
+        marginTop: '10px'
       },
 
       card: {
-        // height: '100%',
-        height: 0,
-        display: 'flex',
-        flexDirection: 'column',
+        width: '266.6px',
+        height: '415px',
+        padding: '1rem',
         boxShadow: '0 3px 5px 2px rgba(255, 100, 135, .3)',
+        margin: '1rem'
     },
 
     cardMedia: {
-        height: 0,
-        paddingTop: '56.25%'
+        height: '100%',
     },
 
     cardContent: {
         flexGrow: 1,
     },
+
+    btn: {
+        textDecoration: 'none'
+    },
+
+    img:{
+        width: '100%'
+    }
 
 
 }))
