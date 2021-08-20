@@ -15,14 +15,15 @@ const Skills = () => {
                     return(
                         <React.Fragment key={idx}>
                             <Grid
-                            // item
-                            // xs={12}
-                            // sm={6}
-                            // md={4}
+                            className={classes.gridItems}
+                            item
+                            xs={12}
+                            sm={6}
+                            md={4}
                             >
 
                             <div>
-                            <Button color='primary' variant='outlined'>
+                            <Button color='primary' variant='contained' className={classes.btns}>
                                 {skill}
                             </Button>
                             </div>

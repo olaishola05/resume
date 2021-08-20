@@ -6,6 +6,7 @@ import meal from '../utils/img/meal.png'
 import nomination from '../utils/img/nominations.png'
 import tabify from '../utils/img/tabify-home.png'
 import todo from '../utils/img/todoApp.png'
+import { motion } from 'framer-motion'
 
 const Projects = () => {
     const projects = [
@@ -70,7 +71,16 @@ const Projects = () => {
             {projects.map((project) => {
                 return(
                     <React.Fragment key={project.id}>
-                        <div className={classes.projectCards}>
+                        <motion.div 
+                        className={classes.projectCards}
+                        whileHover={{
+                            scale: 1.2 
+                        }}
+        
+                        whileTap={{
+                            scale: 0.9
+                        }}
+                        >
                         <div className={classes.card}>
                         <h1>{project.title}</h1>
                         <img src={project.imageSrc} alt={project.title} className={classes.img} />
@@ -84,7 +94,7 @@ const Projects = () => {
                             </Button>
                         </div>
                         </div>
-                        </div>
+                        </motion.div>
                     </React.Fragment>
                 )
             })}

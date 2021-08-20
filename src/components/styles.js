@@ -1,20 +1,22 @@
 import { makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
-    root: {
+    root: { 
         display: 'flex',
         flexDirection: 'column',
+        backgroundColor: theme.palette.background.paper,
       },
 
     container: {
-        backgroundColor: theme.palette.background.paper,
         padding: theme.spacing(8, 0, 6),
         width: '70.5vw',
         margin: '0 auto',
+        marginTop: '1rem',
         marginBottom: '1rem',
         borderBottom: '1px solid gray',
         [theme.breakpoints.down('xs')]: {
             width: '100%',
+            marginTop: 0,
           },
     },
 
@@ -37,7 +39,6 @@ const useStyles = makeStyles((theme) => ({
     
     info:{
         width: "40vw",
-        // border: '1px solid blue',
         marginRight: '20px',
         [theme.breakpoints.down('xs')]: {
             width: '100%',
@@ -56,19 +57,21 @@ const useStyles = makeStyles((theme) => ({
 
     info2:{
         width: "60vw",
-        // border: '1px solid blue',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'flex-end',
         [theme.breakpoints.down('xs')]: {
-            display: 'none'
+            display: 'flex',
+            flexDirection: 'column-reverse'
           },
     },
 
     summary: {
-        // padding: theme.spacing(2),
         width: '100vw',
-        marginTop: '1rem'
+        marginTop: '1rem',
+        [theme.breakpoints.down('xs')]: {
+            width: '100vw'
+          },
     },
 
     image:{
@@ -84,9 +87,7 @@ const useStyles = makeStyles((theme) => ({
         width: theme.spacing(20),
         height: theme.spacing(20),
         [theme.breakpoints.down('xs')]: {
-            width: theme.spacing(10),
-            height: theme.spacing(10),
-            align: 'center'
+            display:'none'
           },
       },
 
@@ -100,15 +101,30 @@ const useStyles = makeStyles((theme) => ({
       },
 
       tech:{
-            padding: '20px 0',
-            // height: '50%',
-            boxShadow: '0 3px 5px 2px rgba(255, 100, 135, .3)',    
+            padding: '20px 0',   
       },
 
       skills:{
-        // width: '80%',
         display: 'grid',
-        gridTemplateColumns: 'repeat(10, 1fr)'
+        gridTemplateColumns: 'repeat(5, 1fr)',
+        gap: '2px',
+        borderBottom: '1px solid gray',
+        width: '80%',
+        margin: '0 auto',
+        [theme.breakpoints.down('xs')]: {
+            display: 'grid',
+            gridTemplateColumns: 'repeat(2, 1fr)',  
+          },
+        
+      },
+
+      gridItems:{
+        marginTop: '1rem',
+      },
+
+      btns:{
+        width: '150px',
+        marginBottom: '.5rem'
       },
 
       lists:{
@@ -116,9 +132,7 @@ const useStyles = makeStyles((theme) => ({
       },
 
       projects:{
-          marginTop: '1rem',
           padding: '20px 0',
-          border: '1px solid green'
       },
 
       projectTitle: {
@@ -126,18 +140,28 @@ const useStyles = makeStyles((theme) => ({
       },
 
       projectCard:{
+        width: '70.5vw',
         display: 'grid',
         gridTemplateColumns: 'repeat(3, 1fr)',
-        border: '1px solid red',
-        marginTop: '10px'
+        marginTop: '10px',
+        marginBottom: '2rem',
+        [theme.breakpoints.down('xs')]: {
+            gridTemplateColumns: '1fr',
+          },
       },
 
       card: {
-        width: '266.6px',
+        width: '276.6px',
         height: '415px',
         padding: '1rem',
-        boxShadow: '0 3px 5px 2px rgba(255, 100, 135, .3)',
-        margin: '1rem'
+        boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+        margin: '1rem',
+        [theme.breakpoints.down('xs')]: {
+            display: 'grid',
+            gridTemplateColumns: '1fr',
+            width: '276.6px',
+          },
+        
     },
 
     cardMedia: {
@@ -154,6 +178,14 @@ const useStyles = makeStyles((theme) => ({
 
     img:{
         width: '100%'
+    },
+
+    foot:{
+        borderBottom: '1px solid gray'
+    },
+
+    socio:{
+        margin: '10px'
     }
 
 
